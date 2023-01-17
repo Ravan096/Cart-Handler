@@ -1,0 +1,49 @@
+@import 'colors';
+
+nav{
+    height: 3rem;
+    background-color: $secondary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    >h2{
+        padding: 2rem;
+        color: $primary;
+        text-transform: uppercase;
+    }
+
+    >div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+
+        >a{
+            color: $primary;
+            margin: 0 1rem;
+            font-size: 1.3rem;
+            transition: all 0.3s;
+
+            &:hover{
+                opacity: 0.5;
+            }
+
+            >svg{
+                font-size: 2rem;
+            }
+            >p{
+                height: 1rem;
+                width: 1rem;
+                background-color: $tertiary;
+                border-radius: 50%;
+                position: absolute;
+                font: 900 0.7rem 'Roboto';
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: translate(120%,-90%);
+            }
+        }
+    }
+}

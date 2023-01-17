@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+@import'./colors';
+@import'./home';
+@import'./header';
+@import 'cart';
+@import 'mediaquery';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    // background-color: $secondary;
+    text-decoration: none;
+}
+
+body{
+    background-color: $primary;
+    // color: $tertiary;
+}

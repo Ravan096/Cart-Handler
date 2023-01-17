@@ -1,0 +1,60 @@
+@import'colors';
+
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    // color: $tertiary;
+}
+
+
+
+.productcard{
+    height: 30rem;
+    width: 15rem;
+    background-color: $tertiary;
+    border-radius: 2rem;
+    transition: all 0.3s;
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+    box-shadow: 0.5rem 0.5rem 1rem $tertiary ;
+
+    >img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+     >h3{
+        margin: 1rem;
+     }
+     h4{
+        margin: 1rem;
+     }
+
+    button{
+        background-color: $secondary;
+        padding: 1rem;
+        font: 500 1rem 'Roboto';
+        border-radius: 2rem;
+        border:none;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: $tertiary;
+    
+        &:hover{
+            opacity: 0.5;
+            background-color: $secondarydark;
+        }
+    }
+
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
